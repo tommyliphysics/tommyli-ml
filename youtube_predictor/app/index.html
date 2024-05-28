@@ -45,7 +45,7 @@ You can find a list of video categories <a href="https://mixedanalytics.com/blog
             var inputVideoDescription = document.getElementById('videoDescription').value;
 
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'http://192.168.1.102:5003/predict?video_category=' + inputVideoCategory + '&channel_title=' + inputChannelTitle + '&video_title=' + inputVideoTitle + '&video_description=' + inputVideoDescription, true);
+            xhr.open('GET', 'https://192.168.1.103:5003/predict?video_category=' + inputVideoCategory + '&channel_title=' + inputChannelTitle + '&video_title=' + inputVideoTitle + '&video_description=' + inputVideoDescription, true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     predictButton.innerHTML = "Predict";
