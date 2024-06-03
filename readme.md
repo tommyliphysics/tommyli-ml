@@ -10,17 +10,8 @@ I explored this problem by training LLMs to detect AI-generated text rather than
 
 One of the models is deployed on a serverless container at AWS Fargate and can be used as an app via a web portal at https://tommyliphysics.github.io/ai_detector/ .
 
-<figure>
-  <video width="640" height="360" controls>
-    <source src="https://tommyliphysics.github.io/static/demos/aidetector.mp4" type="video/mp4">
-    Your browser does not support the video tag. Watch the demo at:
-  </video>
-  <figcaption>
-Music from #Uppbeat (free for Creators!): https://uppbeat.io/t/mood-maze/cybertruck
-License code: UZC3BLL20RJ8ZV3X
-</figcaption>
-</figure>
-
+*Music from #Uppbeat (free for Creators!): https://uppbeat.io/t/mood-maze/cybertruck
+License code: UZC3BLL20RJ8ZV3X*
 
 You can find the following files in /ai_detector:
 * /ai_detector/notebooks/ : I document the preprocessing of the raw data in preparation for machine learning (data_wrangling.ipynb), exploratory data analysis using NLP methods (EDA.ipynb), the creation of two models (deberta.ipynb and distilbert.ipynb) and model testing (eval.ipynb).
@@ -35,16 +26,10 @@ The question I address in this project is: how well can the popularity of a YouT
 
 Five of these models are deployed on a serverless container at AWS Fargate and can be used as an app via a web portal at https://tommyliphysics.github.io/youtube_predictor/ .
 
-<figure>
-  <video width="640" height="360" controls>
-    <source src="https://tommyliphysics.github.io/static/demos/ytpredictor.mp4" type="video/mp4">
-    Your browser does not support the video tag. Watch the demo at:
-  </video>
-  <figcaption>
-Music from #Uppbeat (free for Creators!): https://uppbeat.io/t/mood-maze/cybertruck
-License code: UZC3BLL20RJ8ZV3X
-</figcaption>
-</figure>
+https://github.com/tommyliphysics/tommyli-ml/assets/166401665/ea30cbb2-c209-414f-bfed-f1b7052ab3e2
+*Music from #Uppbeat (free for Creators!): https://uppbeat.io/t/mood-maze/cybertruck
+License code: UZC3BLL20RJ8ZV3X*
+
 
 You can find the following files in /youtube_predictor:
 * /youtube_predictor/notebooks : I document the exploratory data analysis using NLP methods (EDA.ipynb), model building via classical machine learning methods with Bayesian hyperparameter optimisation (tfidf.ipynb), and testing (eval.ipynb)
