@@ -1,4 +1,4 @@
-# Welcome to my github repository
+# Welcome to my Machine Learning projects
 
 This repository is a collection of machine learning projects on a number of topics that I have been developing an interest in. I've made the training and testing datasets for each project available, as well as detailed jupyter notebooks that can be used to generate the models from scratch (make sure to run pip install requirements.txt for all dependencies). The projects are:
 
@@ -10,8 +10,7 @@ I explored this problem by training LLMs to detect AI-generated text rather than
 
 One of the models is deployed on a serverless container at AWS Fargate and can be used as an app via a web portal at https://tommyliphysics.github.io/ai_detector/ .
 
-*Music from #Uppbeat (free for Creators!): https://uppbeat.io/t/mood-maze/cybertruck
-License code: UZC3BLL20RJ8ZV3X*
+![AIDetectorDemov3-Made-with-Clipchamp_1717406081115](https://github.com/tommyliphysics/tommyli-ml/assets/166401665/234e6b85-fcd6-49cf-8fda-cef56467465b)
 
 You can find the following files in /ai_detector:
 * /ai_detector/notebooks/ : I document the preprocessing of the raw data in preparation for machine learning (data_wrangling.ipynb), exploratory data analysis using NLP methods (EDA.ipynb), the creation of two models (deberta.ipynb and distilbert.ipynb) and model testing (eval.ipynb).
@@ -26,10 +25,7 @@ The question I address in this project is: how well can the popularity of a YouT
 
 Five of these models are deployed on a serverless container at AWS Fargate and can be used as an app via a web portal at https://tommyliphysics.github.io/youtube_predictor/ .
 
-https://github.com/tommyliphysics/tommyli-ml/assets/166401665/ea30cbb2-c209-414f-bfed-f1b7052ab3e2
-*Music from #Uppbeat (free for Creators!): https://uppbeat.io/t/mood-maze/cybertruck
-License code: UZC3BLL20RJ8ZV3X*
-
+![ytpredictor](https://github.com/tommyliphysics/tommyli-ml/assets/166401665/28a0748f-7dc5-4690-9236-fd5420b9951d)
 
 You can find the following files in /youtube_predictor:
 * /youtube_predictor/notebooks : I document the exploratory data analysis using NLP methods (EDA.ipynb), model building via classical machine learning methods with Bayesian hyperparameter optimisation (tfidf.ipynb), and testing (eval.ipynb)
