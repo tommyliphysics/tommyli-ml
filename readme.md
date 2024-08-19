@@ -42,3 +42,13 @@ You can find the following files in /arxiv_trends:
 
 * /arxiv_trends/notebooks/ : I look at historical trends in the cond-mat category of the ArXiv.
 * /arxiv_trends/data/ : monthly data for the 500 most common keywords by appearance in the publication abstracts and titles.
+
+## A Vector Database of Classic English Literature
+
+Vector databases have recently come into play as a powerful application of Machine Learning methods to storing data, particulary natural language. Rather than merely searching a document by keywords, a vector database provides the capability to match records which are semantically similar to a search phrase. This is done by making use of part of a pre-trained large language model - specifically, the *embedding layer* of a deep neural network, which has been trained on a large natural language corpus to encode text data into a mathematical representation. This representation is an *embedding vector*, or a co-ordinate in a continuous space with hundreds or thousands of dimensions. The closer the vectors are in this space, the more similar the model believes the meanings corresponding to their decoded texts to be.
+
+In this project I demonstrate how to build a vector database from scratch in python, using a pre-trained transformer model and the [FAISS (Facebook Artificial Intelligence Similarity Search)](https://ai.meta.com/tools/faiss). The database consists of classic English literature texts acquired from [Project Gutenberg](https://www.gutenberg.org).
+
+You can find the following files in /literature_vdb:
+* /literature_vdb/notebooks/ : a guide to creating a vector database
+* /literature_vdb/data/ : the text data, embedding vectors, and FAISS-generated search indices.
