@@ -6,16 +6,7 @@ This repository is a collection of machine learning projects on a number of topi
 
 During my time as a postdoctoral researcher in theoretical condensed matter physics, I became aware of the rapidly advancing field of natural language processing (NLP), large-language models (LLMs) and transformers such as Google's BERT. Researchers in my field had become gripped by excitement about machine learning and its applications both in and outside of the scientific context. The release of Chat-GPT at the end of 2022 brought mass attention to these developments, and today, along with AI-generated audiovisual media, generative AI appears to be in an early stage of revolutionising the role of information technology in society. For most, LLMs are set to become an essential tool, but many view their ever-broadening influence with concern. Developing software that can identify when a text has been produced by AI is becoming a critical need. This of course raises a fascinating theoretical question: is it possible to use a machine learning model to accurately detect whether a machine learning model has authored a specific text, considering that the model that may have generated the text has been designed specifically to imitate human writing?
 
-I explored this problem by training LLMs to detect AI-generated text rather than create it and the full process is documented in "/ai_detector." For training and testing, I compiled a dataset of 12090 human-generated texts obtained from Wikipedia, Reddit and IMDB, and generated 12090 samples of matching text using GPT-3.5 Turbo. I then trained two variants of BERT to recognise AI-generated text.
-
-One of the models is deployed on a serverless container at AWS Fargate and can be used as an app via a web portal at https://tommyliphysics.github.io/ai_detector/ .
-
-![AIDetectorDemov3-Made-with-Clipchamp_1717406081115](https://github.com/tommyliphysics/tommyli-ml/assets/166401665/234e6b85-fcd6-49cf-8fda-cef56467465b)
-
-You can find the following files in /ai_detector:
-* /ai_detector/notebooks/ : I document the preprocessing of the raw data in preparation for machine learning (data_wrangling.ipynb), exploratory data analysis using NLP methods (EDA.ipynb), the creation of two models (deberta.ipynb and distilbert.ipynb) and model testing (eval.ipynb).
-* /ai_detector/data/ : the raw datasets (reddit.csv, imdb.csv, wiki.csv, gpt_reddit.csv, gpt_reviews.csv, gpt_wiki.csv), the cleaned datasets (reddit_cleaned.csv, imdb_cleaned.csv, wiki_cleaned.csv, gpt_reddit_cleaned.csv, gpt_reviews_cleaned.csv, gpt_wiki_cleaned.csv), the final form of the data used for training and testing and the split train/test sets (samples.csv, train.csv, test.csv), and the full text used to train a sentencepiece tokenizer (corpus.txt)
-* /ai_detector/tokenizers/ : various tokenizers trained during EDA.
+To explore this problem I created Athena, an open-source AI detection app, available via a web platform at: [https://birefringent-ai.com/athena](https://birefringent-ai.com/athena). The code and documentation can be found at: [https://github.com/tommyliphysics/athena-source](https://github.com/tommyliphysics/athena-source)
 
 ## YouTube popularity prediction
 
