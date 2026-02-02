@@ -14,14 +14,10 @@ Since its launch in 2005, YouTube has been a hugely impactful resource for peopl
 
 The question I address in this project is: how well can the popularity of a YouTube video be predicted by text features such as the video title and description? Developing such a tool would enable a content creator to explore a range of potential video ideas before committing to creating a video, improving their ability to reach an audience and garner views and subscriptions. I compiled a dataset consisting of metadata for 31662 YouTube videos published in the last seven years in topics related to science and technology, and created and tested a number of ML models to predict the popularity of a video based on its title and description.
 
-Five of these models are deployed on a serverless container at AWS Fargate and can be used as an app via a web portal at https://tommyliphysics.github.io/yt_predictor/ .
-
-![ytpredictor](https://github.com/tommyliphysics/tommyli-ml/assets/166401665/28a0748f-7dc5-4690-9236-fd5420b9951d)
+An updated version of this model is deployed to a web platform at: [https://birefringent-ai.com/calliope](https://birefringent-ai.com/calliope)
 
 You can find the following files in /youtube_predictor:
 * /youtube_predictor/notebooks : I document the exploratory data analysis using NLP methods (EDA.ipynb), classical ML approaches using TF-IDF vectorisation (tfidf.ipynb) and vector embeddings (embeddings.ipynb), and a fine-tuned LLM (distilbert.ipynb). The TF-IDF models are tested in a separate notebook (eval.ipynb)
-* /youtube_predictor/data : raw datasets (video_metadata_v1.csv, video_metadata_v2.csv - v2 was used for training and testing the models), the final datasets used for training and testing and the split train/test sets (YT_data_v2.csv, train.csv, test.csv), and optimised hyperparameters for various models (logreg_tune.csv, mnB_tuned.csv, perceptron_tuned.csv, SVM_tuned.csv)
-* /youtube_predictor/tokenizers : byte-pair encoding tokenizers trained during EDA.
 
 ## Trends in academic publishing
 
