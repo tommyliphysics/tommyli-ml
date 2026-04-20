@@ -12,12 +12,11 @@ Today, there is a huge demand for software that can identify when a text has bee
 
 Since its launch in 2005, YouTube has been a hugely impactful resource for people of all ages all around the world. While social media sites such as Facebook, Instagram and TikTok have recently become solid competitors when it comes to short-form video content for entertainment, YouTube stands out by offering long-form video content such as video essays, complete news broadcasts and video tutorials that are particularly suited for informative and educational purposes. With thousands of new videos published daily, YouTube offers a rich source of data well-suited to machine learning techniques. With its popularity continuing to exhibit solid growth I expect ML solutions to become hugely beneficial to YouTube's rapidly expanding base of content creators.
 
-The question I address in this project is: how well can the popularity of a YouTube video be predicted by text features such as the video title and description? Developing such a tool would enable a content creator to explore a range of potential video ideas before committing to creating a video, improving their ability to reach an audience and garner views and subscriptions. I compiled a dataset consisting of metadata for 31662 YouTube videos published in the last seven years in topics related to science and technology, and created and tested a number of ML models to predict the popularity of a video based on its title and description.
-
-An updated version of this model is deployed to a web platform at: [https://birefringent-ai.com/calliope](https://birefringent-ai.com/calliope)
+To assist aspiring YouTubers, whether students detailing their educational journey, social media teams at universities, research institutes and labs, or hobbyists and professionals offering product reviews or tutorials, I created [https://birefringent-ai.com/calliope](Calliope), an ML prediction engine trained on hundreds of thousands of YouTube videos. Calliope enables a content creator to explore a range of potential video ideas before committing to creating a video, improving their ability to reach an audience and garner views and subscriptions. 
 
 You can find the following files in /youtube_predictor:
-* /youtube_predictor/notebooks : I document the exploratory data analysis using NLP methods (EDA.ipynb), classical ML approaches using TF-IDF vectorisation (tfidf.ipynb) and vector embeddings (embeddings.ipynb), and a fine-tuned LLM (distilbert.ipynb). The TF-IDF models are tested in a separate notebook (eval.ipynb)
+* /youtube_predictor/notebooks : Creation of a baseline model using LLM embeddings + classical machine learning (yt_prediction.ipynb)
+* /youtube_predictor/data : LLM-generated data used to train the baseline model
 
 ## Trends in academic publishing
 
@@ -29,13 +28,3 @@ You can find the following files in /arxiv_trends:
 
 * /arxiv_trends/notebooks/ : I look at historical trends in the cond-mat category of the ArXiv.
 * /arxiv_trends/data/ : monthly data for the 500 most common keywords by appearance in the publication abstracts and titles.
-
-## A Vector Database of Classic English Literature
-
-Vector databases have recently come into play as a powerful application of Machine Learning methods to storing data, particulary natural language. Rather than merely searching a document by keywords, a vector database provides the capability to match records which are semantically similar to a search phrase. This is done by making use of part of a pre-trained large language model - specifically, the *embedding layer* of a deep neural network, which has been trained on a large natural language corpus to encode text data into a mathematical representation. This representation is an *embedding vector*, or a co-ordinate in a continuous space with hundreds or thousands of dimensions. The closer the vectors are in this space, the more similar the model believes the meanings corresponding to their decoded texts to be.
-
-In this project I demonstrate how to build a vector database from scratch in python, using a pre-trained transformer model and the [FAISS (Facebook Artificial Intelligence Similarity Search)](https://ai.meta.com/tools/faiss). The database consists of classic English literature texts acquired from [Project Gutenberg](https://www.gutenberg.org).
-
-You can find the following files in /literature_vdb:
-* /literature_vdb/notebooks/ : a guide to creating a vector database
-* /literature_vdb/data/ : the text data, embedding vectors, and FAISS-generated search indices.
